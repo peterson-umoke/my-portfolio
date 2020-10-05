@@ -32,6 +32,8 @@ Route::get('test', function (\Codedge\Updater\UpdaterManager $updater) {
         // Get the new version available
         $versionAvailable = $updater->source()->getVersionAvailable();
 
+//        echo $versionAvailable;
+
         // Create a release
         $release = $updater->source()->fetch($versionAvailable);
 

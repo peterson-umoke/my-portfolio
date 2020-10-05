@@ -42,7 +42,7 @@ return [
             'repository_vendor' => env('SELF_UPDATER_REPO_VENDOR', 'peterson-umoke'),
             'repository_name' => env('SELF_UPDATER_REPO_NAME', 'my-portfolio'),
             'repository_url' => 'https://github.com/peterson-umoke/my-portfolio/tree/Main',
-            'download_path' => env('SELF_UPDATER_DOWNLOAD_PATH', '/tmp'),
+            'download_path' => env('SELF_UPDATER_DOWNLOAD_PATH', app()->basePath() . '/storage/tmp'),
             'private_access_token' => env('SELF_UPDATER_GITHUB_PRIVATE_ACCESS_TOKEN', ''),
             'use_branch' => env('SELF_UPDATER_USE_BRANCH', ''),
         ],
